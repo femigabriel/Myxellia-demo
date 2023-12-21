@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export const BalanceOverviewCard = () => {
   return (
-    <div className="flex gap-3">
+    <div className="lg:flex gap-3">
       <BalanceCard
-        className="card w-[415px] px-5 py-7 w-fu"
+        className="card lg:w-[415px] w0-full px-5 py-7 w-fu"
         // amount={""}
         amount={
           <span className="text-[#FF6A6A] text-[14px] font-bold">₦ 0.00</span>
@@ -30,7 +30,7 @@ export const BalanceOverviewCard = () => {
         }
       />
       <BalanceCard
-        className="card px-5 py-7 w-[350px]"
+        className="card px-5 py-7 lg:w-[350px] w-full"
         amount={<span className="text-[#CBCBCB] text-[14px] font-bold">0</span>}
         content={"Whole units sold"}
         top="Top Selling"

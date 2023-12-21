@@ -12,19 +12,21 @@ export const Dashboard = () => {
   return (
     <DashboardLayout>
       <div className="flex gap-5 flex-col w-full">
-        <div className="flex w-full gap-4">
+        <div className="lg:flex w-full gap-4">
           <SalesOverview />
           <PropertyOverviewCard />
         </div>
-        <div className="flex gap-3">
+        <div className="lg:flex gap-3">
           <ListingOverview />
           <BalanceOverviewCard />
         </div>
       </div>
-      <div className=" float-right">
+      <div className="lg:loat-right">
         <VeergeAssistant />
       </div>
-      <Footer />
+      <div className="flex ">
+        <Footer />
+      </div>
     </DashboardLayout>
   );
 };

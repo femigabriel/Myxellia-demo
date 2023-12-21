@@ -66,7 +66,7 @@ export const SalesOverview = () => {
         <Divider />
       </div>
 
-      <div className="flex gap-10  w-full px-3">
+      <div className="lg:flex gap-10  w-full px-3">
         <SalesOverviewTable />
         <div className="flex flex-col mt-8">
           <div className="flex gap-3 mb-3">
@@ -175,7 +175,7 @@ export const SalesOverviewTable = () => {
             />
           </div>
 
-          <div className="flex justify-center gap-7 text-[10px] text-[#919191] font-semibold border-[#E4E4E] border-t-2">
+          <div className="flex justify-center lg:gap-7  gap-5 text-[10px] text-[#919191] font-semibold border-[#E4E4E] border-t-2">
             <span>Jan</span>
             <span>Feb</span>
             <span>Mar</span>

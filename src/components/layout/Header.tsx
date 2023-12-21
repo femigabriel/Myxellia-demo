@@ -1,12 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon, ChevronRightIcon, ChatIcon } from "@chakra-ui/icons";
+import {
+  LoginOutlined,
+  MessageOutlined,
+  UserSwitchOutlined,
+} from "@ant-design/icons";
+
 import { CalendarDrawer } from "../dashboard/CalendarDrawer";
+import Link from "next/link";
 
 export const Header = () => {
   return (
-    <main className="bg-[#191919] w-full h-[82p] px-14 py-5">
+    <main className="bg-[#191919] w-full h-[82p] lg:px-14 px-5 py-5">
       <div className="flex justify-between ">
         <Image
           width={50}
@@ -16,7 +23,7 @@ export const Header = () => {
           alt="logo"
           draggable="false"
         />
-        <div className="flex gap-10">
+        <div className="flex lg:gap-10">
           <div className="flex gap-5 lg:mt-3">
             <Image
               width={12}
@@ -26,14 +33,6 @@ export const Header = () => {
               alt="Plus"
               draggable="false"
             />
-            {/* <Image
-              width={50}
-              height={50}
-              src="/assets/icons/Calendar.svg"
-              className="w-[32px] h-[32px] cursor-pointer"
-              alt="Calendar"
-              draggable="false"
-            /> */}
             <CalendarDrawer />
             <Image
               width={50}
@@ -71,16 +70,46 @@ export const Header = () => {
                       />
                     </div>
                   </div>
-                  <div className="lex">
-                  </div>
+                  <div className="lex"></div>
                 </div>
               </MenuButton>
               <MenuList>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Create a Copy</MenuItem>
-                <MenuItem>Mark as Draft</MenuItem>
-                <MenuItem>Delete</MenuItem>
-                <MenuItem>Attend a Workshop</MenuItem>
+                <MenuItem>
+                  <Link
+                    href="/"
+                    className="flex justify-between w-full gap-5 text-base"
+                  >
+                    <div className="flex">
+                      <MessageOutlined className="mt-1 mr-2" />
+                      <span>Support Center</span>
+                    </div>
+                    <ChevronRightIcon color="#3D3D3D" className="mt-1" />
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link
+                    href="/"
+                    className="flex justify-between w-full gap-5 text-base"
+                  >
+                    <div className="flex">
+                      <UserSwitchOutlined className="mt-1 mr-2" />
+                      <span> Switch Account</span>
+                    </div>
+                    <ChevronRightIcon color="#3D3D3D" className="mt-1" />
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link
+                    href="/"
+                    className="flex justify-between w-full gap-5 text-base"
+                  >
+                    <div className="flex">
+                      <LoginOutlined className="mt-1 mr-2" />
+                      <span>Logout</span>
+                    </div>
+                    <ChevronRightIcon color="#3D3D3D" className="mt-1" />
+                  </Link>
+                </MenuItem>
               </MenuList>
             </Menu>
           </div>

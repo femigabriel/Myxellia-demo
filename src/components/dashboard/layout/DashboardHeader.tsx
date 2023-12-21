@@ -7,102 +7,7 @@ import { DashboardButton, DashboardHeaderAuth } from "@/types/global";
 export const DashboardHeader = (props: DashboardHeaderAuth) => {
   return (
     <main className=" w-full">
-      <div className="bg-[#fff] w-full px-14 py-4 dashboard-header">
-        <div className="flex justify-between w-full">
-          <div className="flex lg:gap- w-full">
-            <DashboardHeaderButtons
-              bg="#F5F5F5"
-              icon={
-                <Image
-                  width={50}
-                  height={50}
-                  src="/assets/icons/homeIcon.svg"
-                  className="w-[32px] h-[32px] "
-                  alt="homeIcon"
-                  draggable="false"
-                />
-              }
-              content={<span className=" font-bold">Dashboard</span>}
-            />
-            <DashboardHeaderButtons
-              bg="#ffff"
-              icon={
-                <Image
-                  width={50}
-                  height={50}
-                  src="/assets/icons/Location.svg"
-                  className="w-[32px] h-[32px] "
-                  alt="Location"
-                  draggable="false"
-                />
-              }
-              content="Listings"
-            />
-            <DashboardHeaderButtons
-              bg="#fff"
-              icon={
-                <Image
-                  width={50}
-                  height={50}
-                  src="/assets/icons/user.svg"
-                  className="w-[32px] h-[32px] "
-                  alt="user"
-                  draggable="false"
-                />
-              }
-              content="Users"
-            />
-            <DashboardHeaderButtons
-              bg="#fff"
-              icon={
-                <Image
-                  width={50}
-                  height={50}
-                  src="/assets/icons/Wallet.svg"
-                  className="w-[32px] h-[32px] "
-                  alt="logo"
-                  draggable="false"
-                />
-              }
-              content="Account"
-            />
-            <DashboardHeaderButtons
-              bg="#fff"
-              icon={
-                <Image
-                  width={50}
-                  height={50}
-                  src="/assets/icons/Calendar 1.svg"
-                  className="w-[32px] h-[32px] "
-                  alt="logo"
-                  draggable="false"
-                />
-              }
-              content="Request"
-            />
-            <DashboardHeaderButtons
-              bg="#fff"
-              icon={
-                <Image
-                  width={50}
-                  height={50}
-                  src="/assets/icons/Setting.svg"
-                  className="w-[32px] h-[32px] "
-                  alt="logo"
-                />
-              }
-              content="Settings"
-            />
-          </div>
-          <div>
-            {/* <input placeholder="Search... properties, customers here" className="px-5" /> */}
-            <Input
-              placeholder="Search... properties, customers here"
-              className="px-5"
-            />
-          </div>
-        </div>
-      </div>
+     
       <div className="py-5 px-14">
         <div className="flex">
           <Image
@@ -125,7 +30,7 @@ export const DashboardHeaderButtons = (props: DashboardButton) => {
   return (
     <Button bg={props.bg}>
       {props.icon}
-      <span className="text-[#191919] text-sm px-3">{props.content}</span>
+      <span className="text-[#191919] text-sm ml-2">{props.content}</span>
     </Button>
   );
 };

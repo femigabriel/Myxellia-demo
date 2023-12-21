@@ -22,7 +22,7 @@ export const DashboardLayout = ({ children, title, description }: Props) => {
         </div>
       </Layout>
 
-      <div className="lg:px-16 base_layout">{children}</div>
+      <div className="lg:px-16 px-5 base_layout">{children}</div>
     </div>
   );
 };
