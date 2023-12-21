@@ -21,7 +21,8 @@ export const Dashboard = () => {
           <BalanceOverviewCard />
         </div>
       </div>
-      <div className="lg:loat-right">
+      <div className="lg:flex justify-between">
+        <span></span>
         <VeergeAssistant />
       </div>
       <div className="flex ">
