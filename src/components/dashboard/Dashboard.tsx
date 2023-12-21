@@ -25,7 +25,7 @@ export const Dashboard = () => {
         <span></span>
         <VeergeAssistant />
       </div>
-      <div className="flex ">
+      <div className="flex justify-center">
         <Footer />
       </div>
     </DashboardLayout>
