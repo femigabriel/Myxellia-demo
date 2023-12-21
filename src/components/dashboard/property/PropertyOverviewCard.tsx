@@ -74,6 +74,7 @@ export const PropertyOverviewCard = () => {
         <div className="grid grid-cols-4 gap-10 mt-3">
           <Button
             bg="fff"
+            px="10"
             height="79px"
             borderRadius={12}
             border="1px solid #F5F5F5"
@@ -86,6 +87,7 @@ export const PropertyOverviewCard = () => {
           <Button
             bg="fff"
             height="79px"
+            px="10"
             borderRadius={12}
             border="1px solid #F5F5F5"
           >
@@ -96,6 +98,7 @@ export const PropertyOverviewCard = () => {
           </Button>
           <Button
             bg="fff"
+            px="10"
             height="79px"
             borderRadius={12}
             border="1px solid #F5F5F5"
@@ -108,6 +111,7 @@ export const PropertyOverviewCard = () => {
           <Button
             bg="fff"
             height="79px"
+            px="10"
             borderRadius={12}
             border="1px solid #F5F5F5"
           >
