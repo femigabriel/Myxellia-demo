@@ -47,7 +47,7 @@ export const Header = () => {
             <Menu>
               <MenuButton>
                 <div className="flex">
-                  <div className="flex gap-5">
+                  <div className="flex gap-2">
                     <div className="flex">
                       <Image
                         width={50}

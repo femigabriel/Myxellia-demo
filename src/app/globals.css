@@ -154,15 +154,14 @@ h3 {
   padding-inline-end: 0 !important;
 }
 .main {
-  width: 20rem;
+  /* width: 20rem; */
   padding: 0.7rem;
   margin-left: 1rem;
-  /* border: 1px solid blue; */
 }
 .header {
   display: flex;
   margin-bottom: 0.7rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: #ffff;
 }

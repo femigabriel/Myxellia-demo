@@ -122,7 +122,7 @@ export const CalendarDrawer = () => {
                     onClick={onOpen}
                   />
                 </button>
-                <h2 className="text-white">
+                <h2 className="text-white lg:mx-10 mx-3 text-base">
                   {sDate.toLocaleString("default", {
                     month: "long",
                     year: "numeric",
