@@ -18,7 +18,7 @@ export const SalesOverview = () => {
           width="147px"
           height="46px"
           color="#CBCBCB"
-          fontSize="0.85rem"
+          fontSize="0.75rem"
           fontWeight="600"
           borderRadius="12px"
         >
@@ -161,7 +161,7 @@ export const SalesOverviewTable = () => {
               width={50}
               height={50}
               src="/assets/icons/backIcon.svg"
-              className="w-[32px] h-[32px] "
+              className="w-[32px] h-[32px] cursor-pointer"
               alt="homeIcon"
               draggable="false"
             />
@@ -169,7 +169,7 @@ export const SalesOverviewTable = () => {
               width={50}
               height={50}
               src="/assets/icons/forwardIcon.svg"
-              className="w-[32px] h-[32px] "
+              className="w-[32px] h-[32px] cursor-pointer"
               alt="homeIcon"
               draggable="false"
             />
