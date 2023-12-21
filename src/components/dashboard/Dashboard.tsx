@@ -6,6 +6,7 @@ import { ListingOverview } from "./listing/ListingOverview";
 import { BalanceCard } from "./balance/BalanceCard";
 import { BalanceOverviewCard } from "./balance/BalanceOverviewCard";
 import { VeergeAssistant } from "./VeergeAssistant";
+import { Footer } from "./Footer";
 
 export const Dashboard = () => {
   return (
@@ -23,6 +24,7 @@ export const Dashboard = () => {
       <div className=" float-right">
         <VeergeAssistant />
       </div>
+      <Footer />
     </DashboardLayout>
   );
 };
