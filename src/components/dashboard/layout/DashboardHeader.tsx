@@ -18,9 +18,9 @@ export const DashboardHeader = (props: DashboardHeaderAuth) => {
             alt="handIcon"
             draggable="false"
           />
-          <h1 className="font-bold text-xl">{props.title}</h1>
+          <h1 className="font-bold text-xl mt-4">{props.title}</h1>
         </div>
-        <p className="text-[#3D3D3D]">{props.description}</p>
+        <p className="text-[#3D3D3D] pl-3 mt-1">{props.description}</p>
       </div>
     </main>
   );

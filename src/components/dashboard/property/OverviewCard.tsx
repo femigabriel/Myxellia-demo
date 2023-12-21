@@ -15,7 +15,7 @@ export const OverviewCard = (props: OverviewCardTypes) => {
           </div>
 
           <Button bg="fff">
-            <span className="text-[#CBCBCB] text-[0.75em]] font-semibold">
+            <span className="text-[#CBCBCB] text-xs font-semibold">
               View all
             </span>
             <Image
