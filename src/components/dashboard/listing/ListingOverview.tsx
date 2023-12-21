@@ -10,7 +10,7 @@ export const ListingOverview = () => {
         <h3 className="text text-lg">Listing Overview</h3>
       </div>
       <div className="flex flex-col w-full ">
-        <div className="flex gap-20 mb-7">
+        <div className="flex lg:gap-20 gap-5 mb-7">
           <ListingOverviewCard
             title={"Most Viewed"}
             image={
@@ -44,7 +44,7 @@ export const ListingOverview = () => {
             className="border-2 border-[#12D8A0] bg-[#F5F5F5] rounded-[12px] w-[67px] h-[68px] cursor-pointer "
           />
         </div>
-        <div className="flex gap-20">
+        <div className="flex lg:gap-20 gap-5">
           <ListingOverviewCard
             image={
               <Image
