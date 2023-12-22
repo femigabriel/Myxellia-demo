@@ -8,7 +8,7 @@ export const BalanceOverviewCard = () => {
     <div className="lg:flex gap-3">
       <BalanceCard
         className="card lg:w-[415px] w0-full px-5 py-7 w-fu"
-        // amount={""}
+   
         amount={
           <span className="text-[#FF6A6A] text-[14px] font-bold">₦ 0.00</span>
         }

@@ -43,7 +43,7 @@ export const BalanceCard = (props: BalanceCardTypes) => {
               <span></span>
               <div className="flex">
                 <p className="mt-1 mr-3">1/5</p>
-                <div className="flex">
+                <div className="flex gap-2">
                   <Image
                     width={50}
                     height={50}
